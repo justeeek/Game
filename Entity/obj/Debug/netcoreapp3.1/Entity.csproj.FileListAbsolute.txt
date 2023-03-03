@@ -1,0 +1,20 @@
+C:\Users\Владик\Desktop\game(back)\game\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
+C:\Users\Владик\Desktop\game(back)\game\Entity\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\Владик\Desktop\game(back)\game\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\Владик\Desktop\game(back)\game\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.AssemblyReference.cache
+C:\Users\Владик\Desktop\game(back)\game\Entity\obj\Debug\netcoreapp3.1\Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Владик\Desktop\game(back)\game\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
+C:\Users\Владик\Desktop\game(back)\game\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
+C:\Users\Владик\Desktop\game(back)\game\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CoreCompileInputs.cache
+C:\Users\Владик\Desktop\game(back)\game\Entity\obj\Debug\netcoreapp3.1\Entity.dll
+C:\Users\Владик\Desktop\game(back)\game\Entity\obj\Debug\netcoreapp3.1\Entity.pdb
+E:\Тяпкин игра\game(back)\game\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
+E:\Тяпкин игра\game(back)\game\Entity\bin\Debug\netcoreapp3.1\Entity.dll
+E:\Тяпкин игра\game(back)\game\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
+E:\Тяпкин игра\game(back)\game\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.AssemblyReference.cache
+E:\Тяпкин игра\game(back)\game\Entity\obj\Debug\netcoreapp3.1\Entity.GeneratedMSBuildEditorConfig.editorconfig
+E:\Тяпкин игра\game(back)\game\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
+E:\Тяпкин игра\game(back)\game\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
+E:\Тяпкин игра\game(back)\game\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CoreCompileInputs.cache
+E:\Тяпкин игра\game(back)\game\Entity\obj\Debug\netcoreapp3.1\Entity.dll
+E:\Тяпкин игра\game(back)\game\Entity\obj\Debug\netcoreapp3.1\Entity.pdb
