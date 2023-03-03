@@ -1,0 +1,533 @@
+﻿@{
+	Layout=null;
+}
+
+<html>
+<head>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script>
+		var objects = [];
+
+        var keyup;
+        var keydown;
+
+        var moveArr = [];
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const gameId = urlParams.get('gameId');
+        const userId = urlParams.get('userId');
+        
+        var hero = null;
+        var minId;
+        var maxId;	
+	    function myRender(serverObject)
+	    {
+		    let d=document.createElement('div');
+		    d.style.width = serverObject.Width + "px";
+		    d.style.height = serverObject.Height + "px";
+		    d.style.backgroundImage = serverObject.BackgroundImage;
+		    d.style.bottom = serverObject.Bottom + "px";
+		    d.style.left = serverObject.Left + "px";
+		    d.style.backgroundSize = serverObject.BackgroundSize;
+		    d.style.position = serverObject.Position;
+		    d.style.transform = serverObject.Transform;
+		    d.id = serverObject.Id;
+            d.type = serverObject.Type;
+		    d.style.zIndex = serverObject.ZIndex;
+		    d.className = serverObject.ObjectType;
+            d.Angle = serverObject.Angle;
+            d.Items = serverObject.Items;
+            d.team = serverObject.Team;
+            d.ToType = serverObject.ToType;
+            d.AP = serverObject.AP;
+            
+            //console.log(serverObject.Items);
+            
+           /* if (serverObject.Items != null)
+            {
+                let body = document.body;
+                let tbl  = document.createElement('table');
+                tbl.style.left = window.innerWidth / 2;
+                tbl.style.bottom = window.innerHeight / 2;
+                tbl.style.width  = '300px';
+                tbl.style.border = '1px solid black';
+                tbl.style.position = "absolute";
+                tbl.style.zIndex = 105;
+                tbl.style.background = "black";
+
+                for(let i = 0; i < 4; i++)
+                {
+                    let tr = tbl.insertRow();
+
+                    
+                    for(let j = 0; j < 4; j++)
+                    {
+                        let td = tr.insertCell();
+                        //td.className = "class" + j*i;
+                        //td.appendChild(document.createTextNode(`${i},${j}` ));
+                        //console.log(serverObject.Items[i].BackgroundImage);
+                        
+                        
+                        td.style.border = '1px solid black';
+                        td.style.background = "grey";
+                        td.style.width = 150 + "px";
+                        td.style.height = 50 + "px";
+                        
+                    }
+                    
+                }
+                //console.log(serverObject.Items);
+                
+                body.appendChild(tbl);
+                console.log(serverObject.Items);
+                }*/
+                
+            
+
+            if (serverObject.Items != null)
+            {
+                let body = document.body;
+                let tbl  = document.createElement('table');
+                tbl.style.left = 500;
+                tbl.style.bottom = 5;
+                tbl.style.width  = '900px';
+                tbl.style.border = '1px solid black';
+                tbl.style.position = "absolute";
+                tbl.style.zIndex = 105;
+                tbl.style.background = "black";
+
+                for(let i = 0; i < 1; i++)
+                {
+                    let tr = tbl.insertRow();
+                    for(let j = 0; j < 10; j++)
+                    {
+                        let td = tr.insertCell();
+                        td.style.border = '1px solid black';
+                        td.style.background = "grey";
+                        td.style.width = 130 + "px";
+                        td.style.height = 40 + "px";
+                    }
+                }
+                for (let m in serverObject.Items)
+                    {
+                        if (serverObject.Items[m].ToType != "armor")
+                        {
+                            console.log(serverObject.Items[m]);
+                            let s = document.createElement('div');
+                            s.Id = serverObject.Items[m].ItemId;
+                            console.log(s.id);
+                            console.log(serverObject.Items[m].ItemId);
+                            //s.style.left = 0;
+                            //s.style.bottom = 0;
+                            s.style.width = 0;
+                            s.style.height = 0;
+                            s.style.backgroundImage = null;
+                            s.style.backgroundSize = null;
+                            s.style.position = null;
+                            s.style.zIndex = 0;
+                            // console.log(serverObject.Items[m]);
+                            tbl.appendChild(s);
+                        }
+                    }
+                //console.log(serverObject.Items);
+                
+                body.appendChild(tbl);
+                
+            }
+		    if(serverObject.Angle & serverObject.Angle < 0)
+            {
+                d.style.Transform="rotate(" + serverObject.Angle + "deg)";
+		    }
+		    if (serverObject.Type == "hero" || serverObject.Type == "enemy")
+            {
+			    let h = document.createElement('div');
+			    h.id = serverObject.Id + "-HP-bar";
+			    h.style.width= serverObject.Width  + "px";
+			    h.style.height = 8 + "px";
+			    h.style.bottom = 45 + "px";
+			    h.style.left = "0px";
+			    h.style.background = "red";
+                h.style.transform = serverObject.Transform;
+                
+			    d.appendChild(h);
+		    }
+            
+                if (serverObject.Type == "hero")
+                {
+                    
+                    let l = document.createElement('div');
+                    
+			        l.id = serverObject.Id + "-AP-bar";
+                    //console.log(l.id);
+                    //console.log(serverObject.Width);
+			        l.style.width = 0;
+                   // console.log(l.style.width);
+			        l.style.height = 8 + "px";
+			        l.style.bottom = 52 + "px";
+			        l.style.left = "0px";
+			        l.style.background = "white";
+                    l.style.transform = serverObject.Transform;
+                    l.style.position = "absolute";
+			        d.appendChild(l);
+                    
+                }
+            
+            
+		    document.body.appendChild(d);
+        }
+           
+
+        function refresh()
+        {
+            var WinWidht = window.innerWidth;
+            var WinHeight = window.innerHeight;
+              
+              
+            $.get("https://localhost:44360/Game/GetElements?gameId="+gameId+"&userId="+userId+"&WinWidht="+WinWidht+"&WinHeight="+WinHeight, function(data) 
+            {
+                //console.log(data);
+                arr = JSON.parse(data);
+                
+         
+               // console.log(arr);
+                for (let i = 0; i < arr.length; i++) 
+                {
+                    var ex = false;
+                    for (let j = 0; j < objects.length; j++)
+                    {
+                        if (arr[i].Id == objects[j].Id)
+                        {
+                            ex = true;
+                            document.getElementById(arr[i].Id).style.left = arr[i].Left+"px";
+                            document.getElementById(arr[i].Id).style.bottom = arr[i].Bottom+"px";
+
+                            
+                           // console.log(arr[i].UserId);
+                           /* if (arr[i].UserId == userId) 
+                            {
+                            
+                                if (arr[i].Items != null)
+                                {
+                                    for (let m in arr[i].Items)
+                                    {
+                                       // console.log(arr[i].Items[m]);
+                                        
+                                        if (arr[i].Items[m].ToType == "pistol")
+                                        {
+                                            document.getElementById(arr[i].Items[m].ItemId).style.left = 525 + "px";
+                                            document.getElementById(arr[i].Items[m].ItemId).style.bottom = 15 + "px";
+                                            document.getElementById(arr[i].Items[m].ItemId).style.backgroundImage = arr[i].Items[m].BackgroundImage;
+                                            document.getElementById(arr[i].Items[m].ItemId).style.width = arr[i].Items[m].Width;
+                                            document.getElementById(arr[i].Items[m].ItemId).style.height = arr[i].Items[m].Height;
+                                            document.getElementById(arr[i].Items[m].ItemId).style.backgroundSize = "cover";
+                                            document.getElementById(arr[i].Items[m].ItemId).style.position = "absolute";
+                                            document.getElementById(arr[i].Items[m].ItemId).style.zIndex = 110;
+                                        }
+                                        if (arr[i].Items[m].ToType == "ak")
+                                        {
+                                            s.style.left = 600 + "px";
+                                            s.style.bottom = 20 + "px";
+                                            
+                                        }
+                                        if (arr[i].Items[m].ToType == "rifle")
+                                        {
+                                            s.style.left = 685 + "px";
+                                            s.style.bottom = 20 + "px";
+                                            
+                                        }
+                                        if (arr[i].Items[m].ToType == "minigun")
+                                        {
+                                            s.style.left = 780 + "px";
+                                            s.style.bottom = 20 + "px";
+                                            
+                                        }
+                                        if (arr[i].Items[m].ToType == "armor")
+                                        {
+                                            continue;   
+                                        }
+                                        //document.body.appendChild(s);
+                                        
+                                    }
+                                }
+                            }*/
+                            
+                            if (arr[i].Type == "hero")
+                            {
+                                var a = arr[i].Angle;
+                                document.getElementById(arr[i].Id).style.transform = "rotate(" + a + "deg)";
+                                if (a == 0)
+                                {
+                                    document.getElementById(arr[i].Id + "-HP-bar").style.width = arr[i].HP / 100 * parseInt(arr[i].Width);
+                                    document.getElementById(arr[i].Id + "-HP-bar").style.transform = "translate(0px, -10px) rotate(0deg)";
+                                    for (let m in arr[i].Items)
+                                    {
+                                        if (arr[i].Items[m].ToType == "armor")
+                                        {        
+                                           // console.log(arr[i].Items[m].AP);
+                                            //document.getElementById(arr[i].Id + "-AP-bar").style.width = parseInt(arr[i].Width);
+                                            document.getElementById(arr[i].Id + "-AP-bar").style.width = arr[i].Items[m].AP / 100 * parseInt(arr[i].Width);
+                                            document.getElementById(arr[i].Id + "-AP-bar").style.transform = "translate(0px, 0px) rotate(0deg)";
+                                        }   
+                                    }
+                                }
+                                else if (a == 90)
+                                {
+                                    document.getElementById(arr[i].Id + "-HP-bar").style.transform = "translate(-30px, 10px) rotate(90deg)";
+                                    document.getElementById(arr[i].Id + "-HP-bar").style.width = arr[i].HP / 100 * parseInt(arr[i].Width);
+                                    for (let m in arr[i].Items)
+                                    {
+                                        if (arr[i].Items[m].ToType == "armor")
+                                        {
+                                           // document.getElementById(arr[i].Id + "-AP-bar").style.width = parseInt(arr[i].Width);
+                                            document.getElementById(arr[i].Id + "-AP-bar").style.width = arr[i].Items[m].AP / 100 * parseInt(arr[i].Width);
+                                            document.getElementById(arr[i].Id + "-AP-bar").style.transform = "translate(-40px, 30px) rotate(90deg)";
+                                            
+                                        }   
+                                    }
+                                }
+                                else if (a == 180)
+                                {
+                                    document.getElementById(arr[i].Id + "-HP-bar").style.transform = "translate(0px, 40px) rotate(0deg) scaleX(1)";
+                                    document.getElementById(arr[i].Id + "-HP-bar").style.width = arr[i].HP / 100 * parseInt(arr[i].Width);
+                                    for (let m in arr[i].Items)
+                                    {
+                                    if (arr[i].Items[m].ToType == "armor")
+                                        {
+                                           // document.getElementById(arr[i].Id + "-AP-bar").style.width = parseInt(arr[i].Width);
+                                            document.getElementById(arr[i].Id + "-AP-bar").style.width = arr[i].Items[m].AP / 100 * parseInt(arr[i].Width);
+                                            document.getElementById(arr[i].Id + "-AP-bar").style.transform = "translate(0px, 70px) rotate(0deg) scaleX(1)";
+                                            
+                                        }   
+                                    }
+                                }
+                                else if (a == 270)
+                                {
+                                    document.getElementById(arr[i].Id + "-HP-bar").style.transform = "translate(40px, 20px) rotate(270deg)";
+                                    document.getElementById(arr[i].Id + "-HP-bar").style.width = arr[i].HP / 100 * parseInt(arr[i].Width);
+                                    for (let m in arr[i].Items)
+                                    {
+                                    if (arr[i].Items[m].ToType == "armor")
+                                        {
+                                            //document.getElementById(arr[i].Id + "-AP-bar").style.width = parseInt(arr[i].Width);
+                                            document.getElementById(arr[i].Id + "-AP-bar").style.width = arr[i].Items[m].AP / 100 * parseInt(arr[i].Width);
+                                            document.getElementById(arr[i].Id + "-AP-bar").style.transform = "translate(50px, 40px) rotate(270deg)";
+                                            
+                                        }
+                                    }
+                                }
+                              
+                            }
+                            else if (arr[i].Type == "enemy")
+                            {
+                                document.getElementById(arr[i].Id + "-HP-bar").style.width = arr[i].HP / 100 * parseInt(arr[i].Width);
+                            }
+                            
+                               
+                            
+                            break;
+                        }
+                    }                 
+                    if (!ex)
+                    {   
+                        myRender(arr[i]);   
+                    }
+                }
+                for (var i = 0; i < objects.length; i++) 
+                {
+                    var ex = false;
+                    for (var j = 0; j < arr.length; j++) 
+                    {
+                        if (arr[j].Id == objects[i].Id)
+                        {
+                            ex = true;
+                            break;
+                        }
+                    }                  
+                    if (!ex) {
+                        document.body.removeChild(document.getElementById(objects[i].Id));
+                    }
+                }
+                objects = arr;
+            });
+        }
+
+        /*var isFire = false;
+        function checkShoot()
+        {
+            if (keydown == true)
+            {
+            
+                isFire = true;
+                /*if (userId.Angle == 0)
+                {
+                    var spawnleft = userId.Left + 5 + userId.Width;
+                    var spawnbottom = userId.Bottom - 2 + userId.Height / 2;
+                    $.get("https://localhost:44360/Game/Fire?isFire=true&gameId="+gameId+"&userId="+userId+
+                        "&left=" + spawnleft +"&bottom=" + spawnbottom);
+                }
+                
+                else if (userId.Angle == 180)
+                {
+                    var spawnleft1 = userId.Left - 15;
+                    var spawnbottom1 = userId.Bottom + userId.Height / 2;
+                    $.get("https://localhost:44360/Game/Fire?isFire=true&gameId="+gameId+"&userId="+userId+
+                        "&left=" + spawnleft1 + "&bottom=" + spawnbottom1);
+                }
+               /* else if (userId.Angle == 90)
+                {
+                    var spawnleft2 = userId.Left + (userId.Width / 2);
+                    var spawnbottom2 = userId.Bottom - 35;
+                    $.get("https://localhost:44360/Game/Fire?isFire=true&gameId="+gameId+"&userId="+userId+
+                        "&left=" + spawnleft2 + "&bottom=" + spawnbottom2);
+                }
+                else if (userId.Angle == 270)
+                {
+                    var spawnleft3 = userId.Left + (userId.Width / 2);
+                    var spawnbottom3 = userId.Bottom + userId.Height + 15;
+                    $.get("https://localhost:44360/Game/Fire?isFire=true&gameId="+gameId+"&userId="+userId+
+                        "&left=" + spawnleft3 + "&bottom=" + spawnbottom3);
+                }
+            }
+            else 
+            {
+                if(isFire==true) 
+                {
+                    var spawnleftt;
+                    var spawnbottomm;
+                    isFire = false;
+                    $.get("https://localhost:44360/Game/Fire?isFire=false&gameId="+gameId+"&userId="+userId+
+                        "&left=" + spawnleftt +"&bottom=" + spawnbottomm);
+
+                }
+            } 
+        }*/
+
+        document.addEventListener('keydown', function (event) {
+            $.get("https://localhost:44360/Game/PressButton?buttonCode="+event.keyCode+"&isDown=true&gameId="+gameId+"&userId="+userId);
+            keydown = true;
+        });
+
+        document.addEventListener('keyup', function (event) {
+            $.get("https://localhost:44360/Game/PressButton?buttonCode="+event.keyCode+"&isDown=false&gameId="+gameId+"&userId="+userId);
+            keydown = false;     
+        });
+	
+        function inventory()
+        {
+            var WinWidht = window.innerWidth;
+            var WinHeight = window.innerHeight;
+            $.get("https://localhost:44360/Game/GetElements?gameId="+gameId+"&userId="+userId+"&WinWidht="+WinWidht+"&WinHeight="+WinHeight, function(data)
+            {
+                var arr = JSON.parse(data);
+                //console.log(arr);
+                for (let i = 0; i < arr.length; i++) 
+                {
+                    if (arr[i].UserId == userId)
+                    {
+                        if (arr[i].Items != null)
+                        {
+                            for (let m in arr[i].Items)
+                            {
+                                if (arr[i].Items[m].ToType == "pistol")
+                                {
+                                    document.getElementById(arr[i].Items[m].ItemId).style.left = 525 + "px";
+                                    document.getElementById(arr[i].Items[m].ItemId).style.bottom = 15 + "px";
+                                    document.getElementById(arr[i].Items[m].ItemId).style.backgroundImage = arr[i].Items[m].BackgroundImage;
+                                    document.getElementById(arr[i].Items[m].ItemId).style.width = arr[i].Items[m].Width;
+                                    document.getElementById(arr[i].Items[m].ItemId).style.height = arr[i].Items[m].Height;
+                                    document.getElementById(arr[i].Items[m].ItemId).style.backgroundSize = "cover";
+                                    document.getElementById(arr[i].Items[m].ItemId).style.position = "absolute";
+                                    document.getElementById(arr[i].Items[m].ItemId).style.zIndex = 110;
+                                }
+                                if (arr[i].Items[m].ToType == "ak")
+                                {
+                                    document.getElementById(arr[i].Items[m].ItemId).style.left = 600 + "px";
+                                    document.getElementById(arr[i].Items[m].ItemId).style.bottom = 20 + "px";
+                                    document.getElementById(arr[i].Items[m].ItemId).style.backgroundImage = arr[i].Items[m].BackgroundImage;
+                                    document.getElementById(arr[i].Items[m].ItemId).style.width = arr[i].Items[m].Width;
+                                    document.getElementById(arr[i].Items[m].ItemId).style.height = arr[i].Items[m].Height;
+                                    document.getElementById(arr[i].Items[m].ItemId).style.backgroundSize = "cover";
+                                    document.getElementById(arr[i].Items[m].ItemId).style.position = "absolute";
+                                    document.getElementById(arr[i].Items[m].ItemId).style.zIndex = 110;
+                                }
+                                if (arr[i].Items[m].ToType == "rifle")
+                                {
+                                    document.getElementById(arr[i].Items[m].ItemId).style.left = 685 + "px";
+                                    document.getElementById(arr[i].Items[m].ItemId).style.bottom = 20 + "px";
+                                    document.getElementById(arr[i].Items[m].ItemId).style.backgroundImage = arr[i].Items[m].BackgroundImage;
+                                    document.getElementById(arr[i].Items[m].ItemId).style.width = arr[i].Items[m].Width;
+                                    document.getElementById(arr[i].Items[m].ItemId).style.height = arr[i].Items[m].Height;
+                                    document.getElementById(arr[i].Items[m].ItemId).style.backgroundSize = "cover";
+                                    document.getElementById(arr[i].Items[m].ItemId).style.position = "absolute";
+                                    document.getElementById(arr[i].Items[m].ItemId).style.zIndex = 110;
+                                }
+                                if (arr[i].Items[m].ToType == "minigun")
+                                {
+                                    document.getElementById(arr[i].Items[m].ItemId).style.left = 780 + "px";
+                                    document.getElementById(arr[i].Items[m].ItemId).style.bottom = 20 + "px";
+                                    document.getElementById(arr[i].Items[m].ItemId).style.backgroundImage = arr[i].Items[m].BackgroundImage;
+                                    document.getElementById(arr[i].Items[m].ItemId).style.width = arr[i].Items[m].Width;
+                                    document.getElementById(arr[i].Items[m].ItemId).style.height = arr[i].Items[m].Height;
+                                    document.getElementById(arr[i].Items[m].ItemId).style.backgroundSize = "cover";
+                                    document.getElementById(arr[i].Items[m].ItemId).style.position = "absolute";
+                                    document.getElementById(arr[i].Items[m].ItemId).style.zIndex = 110;
+                                }
+                                
+                               // document.getElementById(arr[i].Id + "-AP-bar").style.width = arr[i].AP / 100 * parseInt(arr[i].Width);
+                                
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        
+        
+
+	    function play() 
+        {
+           refresh();
+           inventory();
+        }
+
+        document.addEventListener('DOMContentLoaded', function () 
+        {
+            //console.log(userId);
+            var WinWidht = window.innerWidth;
+            var WinHeight = window.innerHeight;
+            //console.log(WinWidht);
+            //console.log(WinHeight);
+            $.get("https://localhost:44360/Game/GetElements?gameId="+gameId+"&userId="+userId+"&WinWidht="+WinWidht+"&WinHeight="+WinHeight, function(data) {
+                
+                var arr = JSON.parse(data);
+                //console.log(arr);
+                for (let i = 0; i < arr.length; i++) {
+                    if (arr[i].Type == "hero" && arr[i].UserId == userId){
+                        hero = arr[i];
+                       // console.log(hero.Items);
+                        //console.log(hero);
+                        
+                    }
+                    myRender(arr[i]);
+                    //console.log(arr[i]);
+                }
+                objects = arr;
+                //console.log(objects);
+            });
+            var playInterval = setInterval(play, 25);
+           // var invent = setInterval(inventory, 2500);
+        });
+    </script>
+</head>
+<body style="
+    background-image: url(/im/fon2.png);
+    overflow: hidden;
+	
+">
+
+</body>
+</html>
