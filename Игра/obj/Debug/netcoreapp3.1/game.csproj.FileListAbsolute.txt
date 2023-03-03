@@ -1,0 +1,160 @@
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\game.exe
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\game.deps.json
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\game.runtimeconfig.json
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\game.runtimeconfig.dev.json
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\game.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\game.pdb
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\game.Views.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\game.Views.pdb
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\game.csproj.AssemblyReference.cache
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\game.AssemblyInfoInputs.cache
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\game.AssemblyInfo.cs
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\game.csproj.CoreCompileInputs.cache
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\game.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\game.RazorAssemblyInfo.cache
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\game.RazorAssemblyInfo.cs
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\staticwebassets\game.StaticWebAssets.Manifest.cache
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\game.TagHelpers.input.cache
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\game.TagHelpers.output.cache
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\game.RazorCoreGenerate.cache
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\game.RazorTargetAssemblyInfo.cache
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\game.RazorTargetAssemblyInfo.cs
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\game.Views.pdb
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\game.dll
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\game.pdb
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\game.genruntimeconfig.cache
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\game.csproj.CopyComplete
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Home\Registration.cshtml.g.cs
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\BL.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\DAL.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\BL.pdb
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Game\Index.cshtml.g.cs
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Game\ListGame.cshtml.g.cs
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\Quartz.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Владик\Desktop\game(back)\game\game\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Game\Play.cshtml.g.cs
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Game\ChangeSkin.cshtml.g.cs
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Home\Alert.cshtml.g.cs
+C:\Users\Владик\Desktop\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Home\IndexFalse.cshtml.g.cs
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\appsettings.json
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\game.exe
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\game.deps.json
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\game.runtimeconfig.json
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\game.runtimeconfig.dev.json
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\game.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\game.pdb
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\game.Views.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\game.Views.pdb
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Humanizer.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Npgsql.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Quartz.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\BL.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\DAL.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Entity.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\BL.pdb
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\DAL.pdb
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\Entity.pdb
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\game.csproj.AssemblyReference.cache
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\game.GeneratedMSBuildEditorConfig.editorconfig
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\game.AssemblyInfoInputs.cache
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\game.AssemblyInfo.cs
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\game.csproj.CoreCompileInputs.cache
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\game.MvcApplicationPartsAssemblyInfo.cache
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\game.RazorAssemblyInfo.cache
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\game.RazorAssemblyInfo.cs
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\staticwebassets\game.StaticWebAssets.Manifest.cache
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\staticwebassets\game.StaticWebAssets.Pack.cache
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.game.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.game.props
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.game.props
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.game.props
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\game.TagHelpers.input.cache
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\game.TagHelpers.output.cache
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\game.RazorCoreGenerate.cache
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Game\ChangeSkin.cshtml.g.cs
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Game\Index.cshtml.g.cs
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Game\ListGame.cshtml.g.cs
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Game\Play.cshtml.g.cs
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Home\Alert.cshtml.g.cs
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Home\IndexFalse.cshtml.g.cs
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Home\Registration.cshtml.g.cs
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\game.RazorTargetAssemblyInfo.cache
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\game.RazorTargetAssemblyInfo.cs
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\game.Views.pdb
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\game.csproj.CopyComplete
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\game.dll
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\game.pdb
+E:\Тяпкин игра\game(back)\game\game\obj\Debug\netcoreapp3.1\game.genruntimeconfig.cache
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\EntityFramework.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Тяпкин игра\game(back)\game\game\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
